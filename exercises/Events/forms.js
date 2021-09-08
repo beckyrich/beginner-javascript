@@ -32,3 +32,15 @@ signupForm.name.addEventListener('blur', logEvent);
 // 'keydown'
 // 'focus'
 // 'blur'
+
+// Accesibility issues and examples
+const photo = document.querySelector('.photo');
+
+function handlePhotoClick(e) {
+    if (e.type === 'click' || e.key === 'Enter') {
+        console.log('You clicked the photo');
+    }
+};
+
+photo.addEventListener('click', handlePhotoClick);
+photo.addEventListener('keyup', handlePhotoClick);
