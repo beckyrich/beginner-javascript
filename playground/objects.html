@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="../base.css">
+</head>
+
+<body>
+    <input type="text" name="first" value="wes">
+  <script>
+      const person = {
+          age: 100,
+          name: 'wes',
+          'cool-dude': true,
+          'really cool': false,
+          '777': true,
+          dog: 'snicker',
+          clothing: {
+              shirts: 10,
+              pants: 2,
+          },
+          sayHello: function (greeting = 'Hey') {
+              return `${greeting} ${this.name}`;
+          }
+      };
+
+      person.job = 'Web Developer';
+      console.log(person);
+
+    //   const propertyToCheck = prompt('What do you want to check?');
+    //   console.log(propertyToCheck);
+    //   console.log(person[propertyToCheck]);
+
+    const nameInput = document.querySelector('[name="first"]');
+    const name = nameInput.value;
+    console.log(name);
+
+    // Methods
+
+  </script>
+</body>
+
+</html>
